@@ -1,0 +1,46 @@
+{
+  "name": "whatsapp-moderation-app",
+  "version": "1.0.0",
+  "description": "AI-powered WhatsApp moderation app with content filtering and automated responses",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "multer": "^1.4.5-lts.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^8.0.0",
+    "socket.io": "^4.7.4",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "whatsapp",
+    "moderation",
+    "ai",
+    "content-filtering",
+    "speech-to-text",
+    "hate-speech-detection"
+  ],
+  "author": "WhatsApp Moderation Team",
+  "license": "MIT"
+} 
